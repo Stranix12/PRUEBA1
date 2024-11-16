@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/page.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="contenedor">
+        <h1>VENTAS DE PRODUCTOS</h1>
+        <form action="">
+            <div class="grupo">
+                <label for="costo">Costo</label>
+                <input type="text" id="costo" placeholder="ingrese el costo">
+            </div>
+            <div class="grupo">
+                <label for="descuento">Descuento(%)</label>
+                <input type="text" id="descuento" placeholder="procentaje de descuento">
+            </div>
+            <div class="grupo">
+                <label>IVA(12%)</label>
+                <input type="checkbox" name="IVA" id="IVA">
+            </div>
+            <div class="grupo">
+                <button type="button" onclick="cal.venta()">calcular</button>
+                <button type="reset">cancelar</button>
+                <button type="submit">regresar</button>
+
+            </div>
+        <textarea id="resp" rows="10 "> Respuesta aqui . . .</textarea>
+        </form>
+    </section>
+    <script src="../JS/calculo.js"> </script>
+</body>
+</html>
